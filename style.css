@@ -830,7 +830,7 @@ img[alt="Pjs Startup"] {
 .projects-title {
     margin: 2vmax;
     flex: 1;
-    animation: appear 1s ease-out;
+    animation: appear 2s ease-out;
     animation-fill-mode: both;
     animation-delay: 0.8s;
 }
@@ -862,7 +862,7 @@ img[alt="Pjs Startup"] {
 .img-container {
     position: relative;
     margin: 1vmax 3vmax;
-    animation: appear 1s ease-out;
+    animation: appear 2s ease-out;
     animation-fill-mode: both;
 }
 .row .img-container:nth-child(1) { animation-delay: .2s }
