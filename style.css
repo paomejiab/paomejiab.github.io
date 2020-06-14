@@ -74,12 +74,26 @@ body {
     background-color: white;
     bottom: -5px;
 }
+@media only screen and (max-width: 1600px) {
+    #nav-reload-page:after {
+        bottom: -50%;
+    }
+    #nav-reload-page:hover::after {
+        bottom: -50%;
+        width: 3%;
+    }
+}
 
 .nav-items {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 18vw;
+}
+@media only screen and (max-width: 1600px) {
+    .nav-items {
+        width: 25vw;
+    }
 }
 .nav-item {
     font-family: 'Oswald', sans-serif;
@@ -137,6 +151,11 @@ div.nav-items:nth-child(4) { animation-delay: 1.8s }
     animation-delay: 1.6s;
     width: 1.5vmax;
     height: 1vmax;
+}
+@media only screen and (max-width: 1600px) {
+    .menu-wrapper {
+        margin-top: 5px;
+    }
 }
 
 .nav-menu-top {
@@ -291,8 +310,6 @@ div.nav-items:nth-child(4) { animation-delay: 1.8s }
     flex: 1;
     height: 50vh;
 }
-
-
 #recommendation-wrapper {
     position: relative;
     margin-right: 3vmax;
@@ -301,7 +318,6 @@ div.nav-items:nth-child(4) { animation-delay: 1.8s }
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 .recommendation {
     color: white;
@@ -324,7 +340,18 @@ div.nav-items:nth-child(4) { animation-delay: 1.8s }
     animation-fill-mode: both;
     animation-delay: 1.5s;
 }
-
+@media only screen and (max-width: 1600px) {
+    .recommendation {
+        font-size: 0.9rem;
+    }
+    .recommendation-source {
+        font-size: 0.7rem;
+    }
+    #recommendation-wrapper {
+        height: 50vh;
+        padding: 1.5vmax;
+    }
+}
 .quote-box-ul {
     position: absolute;
     top: 0;
@@ -526,6 +553,17 @@ div.footer-items>span:hover::after {
     animation-fill-mode: both;
     margin-right: 10vmax;
 }
+@media only screen and (max-width: 1600px) {
+    .contact-main-text {
+        font-size: 5rem;
+        line-height: 5rem;
+        right: 2%;
+    }
+    .contact-main-sub-text {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+}
 
 
 
@@ -602,6 +640,20 @@ div.footer-items>span:hover::after {
     letter-spacing: 3px;
     margin-bottom: 2vmax;
     text-align: right;
+}
+@media only screen and (max-width: 1600px) {
+    .about-title {
+        font-size: 5rem;
+        top: 10%;
+        left: 35%
+    }
+    .about-caption {
+
+    }
+    .about-desc {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
 }
 
 
@@ -725,9 +777,36 @@ div.footer-items>span:hover::after {
     flex: 1;
 }
 .embed-pdf {
+    width: 640px;
+    height: 900px;
     animation: appear 1s ease-out;
     animation-fill-mode: both;
     animation-delay: 2s;
+}
+@media only screen and (max-width: 1600px) {
+    .embed-pdf {
+        width: 400px;
+        height: 550px;
+    }
+    .section-resume-main {
+        width: 32vw;
+        padding: 2vmax 4vmax;
+    }
+    .resume-text-heading {
+        font-size: 1.2rem;
+        margin-bottom: 1vmax;
+    }
+    .resume-text-sub {
+        font-size: 0.6rem;
+        margin-bottom: 0.4vmax;
+    }
+    .resume-text-entry {
+        font-size: 0.8rem;
+        margin-bottom: 0.4rem;
+    }
+    .sub-section-edu, .sub-section-work {
+        margin: 0 1vw;
+    }
 }
 
 /* PROJECTS PAGE */
@@ -769,6 +848,14 @@ img[alt="Pjs Startup"] {
 .project-img:hover {
     animation: emphasis 1s ease;
     animation-fill-mode: both;
+}
+@media only screen and (max-width: 1600px) {
+    .projects-txt-heading {
+        font-size:4rem;
+    }
+    .projects-txt-sub-heading {
+        font-size: 1.2rem;
+    }
 }
 
 /* IMAGE AND OVERLAY */
