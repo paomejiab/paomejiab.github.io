@@ -218,7 +218,7 @@ div.nav-items:nth-child(4) { animation-delay: 1.8s }
 
 .main-text {
     position: absolute;
-    right: 20%;
+    left: 65%;
     top: 20%;
     color: white;
     font-family: 'Oswald',sans-serif;
@@ -228,7 +228,8 @@ div.nav-items:nth-child(4) { animation-delay: 1.8s }
     font-weight: 400;
     letter-spacing: 3px;
     text-transform: uppercase;
-    animation: appear-slide-main-text 1s linear;
+    opacity: 1;
+    animation: appear-slide-main-text 2s ease-out;
     animation-fill-mode: both;
 }
 .main-sub-text {
@@ -287,11 +288,11 @@ div.nav-items:nth-child(4) { animation-delay: 1.8s }
 @keyframes appear-slide-main-text {
     from {
         opacity: 0;
-        right: 22%;
+        left: 55%;
     }
     to {
         opacity: 1;
-        right: 20%;
+        left: 65%;
     }
 }
 @keyframes appear-slide-sub-text {
@@ -676,7 +677,7 @@ div.footer-items>span:hover::after {
 }
 .resume-text-heading {
     font-family: 'Oswald', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     color: white;
     letter-spacing: 2px;
